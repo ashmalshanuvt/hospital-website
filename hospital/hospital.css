@@ -1,0 +1,520 @@
+:root {
+    --primary-color: #0F2167;
+    --secondary-color: #3559E0;
+    --third-color: #4CB9E7;
+    --forth: #FFECD6;
+    --white: #fff;
+    --text-color:rgb(49, 42, 42);
+    --hundred: 100%
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+html {
+    font-size: 62.7%;
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    
+    /* background-color: aqua; */
+}
+
+main nav {
+    width: 100%;
+    height: 12%;
+    padding: 10px 7%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 .3rem 1rem rgba(0, 0, 0, 0.2);
+    background-color: var(--primary-color);
+    z-index: 98;
+
+}
+
+
+nav a img {
+    height: 100%;
+    width: 7rem;
+    border-radius: 50%;
+
+}
+
+nav div {
+    width: 40rem;
+    /* background-color: chartreuse; */
+    display: flex;
+    justify-content: space-between;
+
+}
+
+nav div a {
+    font-size: 1.5rem;
+    padding: 0.8rem;
+    color: var(--white);
+    font-weight: bold;
+    /* background-color: red; */
+    transition: .4s ease-in-out;
+
+}
+
+nav div a:hover {
+    background-color: var(--secondary-color);
+    color: var(--white);
+    border-radius: 5px;
+}
+
+nav .bars {
+    position: absolute;
+    right: 4%;
+    font-size: 20px;
+    color: var(--white);
+
+
+
+}
+
+main .phon-view-box {
+    width: 20rem;
+    height: 28rem;
+    background-color: red;
+    position: absolute;
+    top: 5rem;
+    right: 4%;
+    z-index: 99;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    transition: 2s ease-in-out;
+
+
+
+
+}
+
+main .toggle-phon-view-box {
+    display: none;
+}
+
+main .phon-view-box a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    border-bottom: 1px solid black;
+    background-color: var(--secondary-color);
+
+    font-size: 1.5rem;
+    padding: 0.8rem;
+    color: var(--white);
+    font-weight: bold;
+    /* background-color: red; */
+    transition: .4s ease-in-out;
+}
+
+main .phon-view-box a:hover {
+    background-color: var(--third-color);
+}
+
+main .box1 {
+    transition: 1s ease-in;
+
+    display: none;
+}
+
+main .home {
+    height: 88%;
+    width: 100%;
+    background: linear-gradient(rgba(255, 255, 255, .2), var(--third-color)), url('https://chhabdahospital.com/img/slider1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+
+}
+
+main .home .left-hospital-details {
+    width: 50%;
+    height: 100%;
+    /* background-color: rebeccapurple; */
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: space-evenly;
+    padding: 5rem 0 0 10rem;
+    
+}
+main .home .left-hospital-details h1{
+    font-size: 6rem;
+    margin-bottom: 2rem;
+    color: var(--white);
+
+    /* padding: 10rem; */
+}
+main .home .left-hospital-details h1 span{
+    color: var(--primary-color);
+}
+main .home .left-hospital-details p{
+    font-size: 1.8rem;
+    color: var(--text-color);
+}
+main .home .left-hospital-details button{
+    padding: 1.2rem;
+    background-color: var(--primary-color);
+    border: none;
+    outline: none;
+    color: var(--white);
+    font-weight: bold;
+    font-size: 1.6em;
+    width: 25%;
+    cursor: pointer;
+    border-radius:.8rem;
+    transition: .5s;
+}
+main .home .left-hospital-details button:hover{
+    background-color: var(--secondary-color);
+    color: var(--white);
+    /* transform: scale(1.11); */
+   
+}
+
+
+
+
+main .home .doctor-images {
+    height: 100%;
+    width: 50%;
+    padding-right: 5rem;
+    overflow: hidden;
+    display: flex;
+    justify-content: end;
+    flex-wrap: wrap;
+}
+
+main .home .doctor-images img {
+    height: 100%;
+    max-width: 100%;
+    /* position: relative;
+    left: 50%;
+    transform: translateX(-25%); */
+    /* mix-blend-mode: ; */
+    opacity: .8;
+}
+main .home .doctor-images .doctor-images-phone-view{
+    display: none;
+}
+
+/* doctor section start */
+.doctor{
+    width: 100%;
+    height: 100vh;
+    /* background-color: ; */
+}
+.doctor h1{
+    text-align: center;
+    font-size: 5rem;
+    margin: 10rem 0 2rem;
+
+}
+.doctor .doctor-details{
+    width: 100%;
+    height: 50rem;
+    background-color: lightblue;
+    padding: .2rem 7%;
+    display: flex;
+    align-items: center;;
+
+}
+.doctor .doctor-details .card{
+    width: 25%;
+    height: 80%;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: .8rem    ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* doctor section end */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:481px) {
+    nav a img {
+        height: 100%;
+        width: 4rem;
+        border-radius: 50%;
+       
+
+    }
+ 
+
+
+}
+@media (max-width:503px){
+    main .home .doctor-images img {
+        /* height: 100%;
+        width: 50%; */
+        /* position: relative;
+        left: 50%;
+        transform: translateX(-25%); */
+        /* mix-blend-mode: ; */
+        opacity: .8;
+        /* display: none; */
+        display: none;
+        
+    }
+    main .home .doctor-images {
+        /* height: 100%;
+        width: 100%;
+        padding-right: 5rem;
+        overflow: hidden; */
+        display: flex;
+        justify-content: center;
+        background: linear-gradient(rgba(255, 255, 255, .2), var(--third-color)), url('images/doctor.png');
+        /* background-position: center; */
+        background-size: cover;
+
+       
+        /* flex-wrap: wrap; */
+    }
+}
+@media (max-width:991px) {
+    nav div a {
+        font-size: 1.3rem;
+
+
+    }
+
+    nav a img {
+        height: 100%;
+        width: 5rem;
+        border-radius: 50%;
+
+    }
+    main .home .doctor-images {
+        height: 100%;
+        width: 100%;
+        padding-right: 5rem;
+        overflow: hidden;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+
+    }
+    
+    main .home .doctor-images img {
+       
+        height: 100%;
+        /* width: 50%; */
+        /* position: relative;
+        left: 50%;
+        transform: translateX(-25%); */
+        /* mix-blend-mode: ; */
+        opacity: .8;
+    }
+    main .home .left-hospital-details {
+       
+        display: none;
+    }
+    main .home .doctor-images .doctor-images-phone-view{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        padding: 5rem 0 0 5rem;
+        flex-direction: column;
+        /* background-color: red; */
+        justify-content: space-evenly;
+        /* display: inline-flex; */
+        /* align-items: center; */
+        display: inline-flex;
+        
+    }
+    .doctor-images-phone-view div h1{
+font-size: 4rem;
+margin-bottom: 1.2rem;
+color: var(--white);
+    }
+    .doctor-images-phone-view div h1 span{
+color: var(--primary-color);
+    }
+    .doctor-images-phone-view div p{
+       
+font-size: 1.7rem;
+    }
+    .doctor-images-phone-view button{
+/* width: 50%;
+padding: 1.5rem; */
+padding: 1.2rem;
+background-color: var(--primary-color);
+border: none;
+outline: none;
+color: var(--white);
+font-weight: bold;
+font-size: 1.6em;
+width: 40%;
+cursor: pointer;
+border-radius:.8rem;
+transition: .5s;
+    }
+
+
+
+
+
+}
+
+@media (max-width:769px) {
+    nav div a {
+        display: none;
+    }
+    main .home .doctor-images {
+        height: 100%;
+        width: 100%;
+        padding-right: 5rem;
+        overflow: hidden;
+        display: flex;
+        justify-content: space-between;
+      
+        
+        background-color: red;
+        background: linear-gradient(rgba(255, 255, 255, .2), var(--third-color)), url('images/doctor.png');
+        background-repeat: no-repeat;
+        background-position-x: right;
+        background-size: cover;
+        
+        
+    }
+    main .home .doctor-images .doctor-images-phone-view{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        padding: 5rem 0 0 5rem;
+        flex-direction: column;
+        display: inline-flex;
+      
+        /* z-index: 33; */
+    }
+    main .home .doctor-images img {      
+        height: 100%;  
+        display: none;
+        /* mix-blend-mode: var(--third-color); */
+        /* filter: opacity(.6);          */
+            /* position: absolute;
+            right: 7%; */
+    }
+    .doctor-images div p{
+        width: 80%;
+    }
+    
+
+
+}
+
+
+
+@media (min-width:769px) {
+    nav .bars {
+        position: absolute;
+        right: 4%;
+        font-size: 20px;
+        color: var(--white);
+        visibility: hidden;
+
+    }
+
+    main .phon-view-box {
+        width: 25rem;
+        height: 30rem;
+        background-color: red;
+        position: absolute;
+        top: 5rem;
+        right: 2.5rem;
+        z-index: 99;
+        display: none;
+
+
+    }
+
+
+
+}
+
+
+
+@media (max-width:1201px) {
+    nav a img {
+        height: 100%;
+        width: 5rem;
+        border-radius: 50%;
+
+    }
+    main .home .left-hospital-details button{
+       
+        font-size: 1.4em;
+        width: 30%;
+       
+    }
+
+
+}
+
+@media (max-width:1025px) {
+    nav a img {
+        height: 100%;
+        width: 5rem;
+        border-radius: 50%;
+
+    }
+    main .home .left-hospital-details p{
+        font-size: 1.5rem;
+        /* color: var(--text-color); */
+    }
+    main .home .left-hospital-details h1{
+        font-size: 5rem;
+        margin-bottom: 2rem;
+        color: var(--white);
+    
+        /* padding: 10rem; */
+    }
+
+}
+
+
+
+@media(min-width:1202px) {
+    nav a img {
+        height: 100%;
+        width: 5rem;
+        border-radius: 50%;
+
+    }
+
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KIMS Hostpital</title>
+    <link rel="stylesheet" href="hospital.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body id="body">
+    <main>
+        <nav>
+            <a href="#"><img
+                    src="data:image/png;base64,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"
+                    alt=""></a>
+
+
+            <div>
+                <a href="">Home</a>
+                <a href="#doctor">Doctor</a>
+                <a href="">Department</a>
+                <a href="">Contact Us</a>
+            </div>
+
+
+            <a href="#"  class="bars"><i class="fa-solid fa-bars"></i></a>
+
+        </nav>
+        <div class="phon-view-box">
+            <a href="">Home</a>
+            <a href="">Doctor</a>
+            <a href="">Department</a>
+            <a href="">Contact Us</a>
+        </div>
+
+        <section class="home">
+            <div class="left-hospital-details">
+             <div>
+                <h1><span>KIMS </span> Hospital</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente maxime ratione optio temporibus! Nulla sunt repudiandae blanditiis fuga, assumenda maxime velit consectetur obcaecati quam adipisci dignissimos sit saepe reiciendis officia?</p>
+             </div>
+              <button>
+                Contact Us</button>
+            </div>
+            <div class="doctor-images">
+                <div class="doctor-images-phone-view">
+                    <div>
+                        <h1><span>KIMS </span> Hospital</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente maxime ratione optio temporibus! Nulla sunt repudiandae blanditiis fuga, assumenda maxime velit consectetur obcaecati quam adipisci dignissimos sit saepe reiciendis officia?</p>
+                     </div>
+                    <button>
+                        Contact Us
+                    </button>
+
+                </div>
+               
+                <img src="images/doctor.png" alt="">
+            </div>
+
+
+        </section>
+
+    </main>
+    <section class="doctor" id="doctor">
+        <h1>Doctors</h1>
+        <div class="doctor-details">
+            <div class="card">
+                <div>
+                    <img src="https://www.kimshealth.org/media/filer_public_thumbnails/filer_public/5b/8b/5b8bc4a5-618d-42fb-9ddb-467adbe200ec/drhashir.jpg__247x278_q85_crop_subsampling-2.jpg" alt=""></div>
+                <div>
+                    <h3>Dr. Hashir A</h3>
+                    <p>Consultant Anesthesia</p>
+                    <p>Anesthesiology</p>
+                    <h4>KIMSHEALTH Trivandrum</h4>
+
+                </div>
+                <button>View Profile</button>
+            </div>
+
+        </div>
+
+    </section>
+
+    <script src="hospital.js"></script>
+</body>
+
+</html>
